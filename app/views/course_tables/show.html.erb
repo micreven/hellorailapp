@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Coursename:</strong>
+  <%= @course_table.coursename %>
+</p>
+
+<p>
+  <strong>Teachername:</strong>
+  <%= @course_table.teachername %>
+</p>
+
+<p>
+  <strong>Coursenum:</strong>
+  <%= @course_table.coursenum %>
+</p>
+
+<p>
+  <strong>Courseroom:</strong>
+  <%= @course_table.courseroom %>
+</p>
+
+<p>
+  <strong>Avaliablenums:</strong>
+  <%= @course_table.avaliablenums %>
+</p>
+
+<%= link_to 'Edit', edit_course_table_path(@course_table) %> |
+<%= link_to 'Back', course_tables_path %>

@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Course Tables</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Coursename</th>
+      <th>Teachername</th>
+      <th>Coursenum</th>
+      <th>Courseroom</th>
+      <th>Avaliablenums</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @course_tables.each do |course_table| %>
+      <tr>
+        <td><%= course_table.coursename %></td>
+        <td><%= course_table.teachername %></td>
+        <td><%= course_table.coursenum %></td>
+        <td><%= course_table.courseroom %></td>
+        <td><%= course_table.avaliablenums %></td>
+        <td><%= link_to 'Show', course_table %></td>
+        <td><%= link_to 'Edit', edit_course_table_path(course_table) %></td>
+        <td><%= link_to 'Destroy', course_table, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Course table', new_course_table_path %>
+<h3><a href="hello.html">back to home</h3>
