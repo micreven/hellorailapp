@@ -5,5 +5,9 @@
 <img src="/lib/home.png" width = "700">
 * 能够link到其他主页
 通过编写html文件，添加链接实现在主页中点击链接跳转到UCAS主页的功能，功能界面截图如下：
-<img src="/lib/home.png" width = "700">
+<img src="/lib/clicktoucas.png" width = "700">
 <img src="/lib/home-ucas.png" width = "700">
+* 能够实现两个页面间的相互跳转
+通过在rail自动生成的greeting文件夹内创建新的html文件，然后分别在home页面和bye页面中进行html文件的编写实现两个页面点击互相跳转的功能，功能截图如下：
+<img src="/lib/clicktobye.png" width = "700">
+<img src="/lib/home-jump.png" width = "700">
